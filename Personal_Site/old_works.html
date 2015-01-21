@@ -1,0 +1,145 @@
+<html>
+<head>
+	<meta charset="UTF-8"/>
+</head>
+<style type="text/css">
+
+	a:link, a:visited { 
+		text-decoration:none;
+		color: #000000;
+		cursor: auto;
+	}
+
+	a:hover { 
+		color:#00C6E3; 
+		text-decoration:none; 
+	} 
+
+	.project,#back,#menu{
+		font-family: "Futura", Arial, serif;
+		font-style: Medium;
+		color:#0000;
+		line-height: 14pt;
+	}
+
+	#back{
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-left: 20px;
+		width:180px;
+		position:absolute;
+		left:10px;
+		top:10px;
+	}
+
+	#menu{
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-left: 20px;
+		width:180px;
+		position:absolute;
+		left:10px;
+		top:70px;
+	}
+
+	#line{
+		width:1px;
+		height: 280px;
+		background-color: #cccccc;
+		position: absolute;
+		left:210px;
+		top:20px;
+
+	}
+
+	.project{
+		/*background-color: #ffffff;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		width:690px;
+		height:100px;
+		position:absolute;
+		left:220px;
+	}
+
+	.project{
+		font-size: 14px;
+	}
+
+
+	#project1{top:20px;}
+	#project2{top:132px;}
+	#project3{top:242px;}
+	#project4{top:352px;}
+
+	#recent{
+		margin-left: 20px;
+		margin-bottom: 30px;
+	}
+
+</style>
+<body onLoad="startTime()">
+	<script type="text/javascript">
+
+		function startTime(){
+			var h = window.innerHeight;
+			document.getElementById("content").style.height = h-32-60;
+		}
+
+		window.addEventListener("resize", function(){
+			var h = window.innerHeight;
+			document.getElementById("content").style.height = h-32-60;
+       // console.log(h-32-60);
+   });
+	</script>
+	<div id="back">
+		<a href="http://xiaolongmu.com"><p> Back To Home </p></a>
+	</div>
+
+	<div id="menu">
+		<a href="http://xiaolongmu.com/recent_works.html"><p> Recent Works </p></a>
+
+		<div id="Old">
+			<a href="http://xiaolongmu.com/old_works.html"><p style="color:#ff0000;"> Old Works </p></a>
+		</div>
+
+		<div id="BSide">
+			<a href="http://xiaolongmu.com/b_side.html"><p> B-Side </p></a>
+		</div>
+	</div>
+
+	<div id="project1" class="project">
+		<a href="http://xiaolongmu.com/old_glass_art.html">
+		<img src="http://xiaolongmu.com/images/Project_menu_03.png" style="height:100px;">
+		<p style="margin-left:4px; display:inline">Glass Art</p>
+		</a>
+	</div>
+
+	<div id="project2" class="project">
+		<a href="http://xiaolongmu.com/old_print_sound.html">
+		<img src="http://xiaolongmu.com/images/Project_menu_06.png" style="height:100px;">
+		<p style="margin-left:4px; display:inline">Print The Sound</p>
+		</a>
+	</div>
+
+	<div id="project3" class="project">
+		<a href="http://xiaolongmu.com/old_max.html">
+		<img src="http://xiaolongmu.com/images/Project_menu_08.png" style="height:100px;">
+		<p style="margin-left:4px; display:inline">Max/Msp Synthesizer</p>
+		</a>
+	</div>
+
+	<div id="project4" class="project">
+		<a href="http://xiaolongmu.com/old_symbol.html">
+		<img src="http://xiaolongmu.com/images/Project_menu_10.png" style="height:100px;">
+		<p style="margin-left:4px; display:inline">Unsuccessful: Symbol Language</p>
+		</a>
+	</div>
+
+
+	<div id="line"></div>
+</body>
+</html>

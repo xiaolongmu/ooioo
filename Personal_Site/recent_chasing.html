@@ -1,0 +1,210 @@
+<html>
+<head>
+	<meta charset="UTF-8"/>
+</head>
+<style type="text/css">
+
+	body 
+	{ 
+		scrollbar-base-color: orange; 
+		scrollbar-arrow-color: green;
+		scrollbar-DarkShadow-Color: blue; 
+	}
+
+	a:link, a:visited { 
+		text-decoration:none;
+		color: #000000;
+	}
+
+	a:hover { 
+		color:#00C6E3; 
+		text-decoration:none; 
+	} 
+
+	#menu,#title,#back{
+		font-family: "Futura", Arial, serif;
+		font-style: Medium;
+		color:#0000;
+		line-height: 14pt;
+	}
+
+	#back{
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-left: 20px;
+		width:180px;
+		position:absolute;
+		left:10px;
+		top:10px;
+	}
+
+	#menu{
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-left: 20px;
+		width:180px;
+		position:absolute;
+		left:10px;
+		top:70px;
+	}
+
+	#line{
+		width:1px;
+		height: 280px;
+		background-color: #cccccc;
+		position: absolute;
+		left:210px;
+		top:20px;
+
+	}
+
+	#title{
+		/*background-color: #ffffff;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-top: 4px;
+		padding-left: 10px;
+		width:690px;
+		position:absolute;
+		left:220px;
+		top:10px;
+
+	}
+
+	#content{
+		padding: 10px;
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		width:680px;
+		position:absolute;
+		left:220px;
+		top:70px;
+		overflow-y:scroll;
+		overflow-x:hidden;
+
+		font-family: "Verdana", Geneva, serif;
+		font-size: 14px;
+	}
+
+	#recent{
+		margin-left: 20px;
+		margin-bottom: 30px;
+	}
+</style>
+<body onLoad="startTime()">
+	<script type="text/javascript">
+
+		
+
+		//.....................................................................
+
+		function startTime(){
+			var h = window.innerHeight;
+			document.getElementById("content").style.height = h-32-60;
+		}
+
+		window.addEventListener("resize", function(){
+			var h = window.innerHeight;
+			document.getElementById("content").style.height = h-32-60;
+       // console.log(h-32-60);
+   });
+	</script>
+	<div id="back">
+		<a href="http://xiaolongmu.com"><p> Back To Home </p></a>
+	</div>
+
+	<div id="menu">
+		<a href="http://xiaolongmu.com/recent_works.html"><p> Recent Works </p></a>
+		<div id="recent">		
+			<a href="http://xiaolongmu.com/recent_chasing.html" style="color: #ff0000;"><p> Chasing Sun Flower Pot </p></a>
+			<a href="http://xiaolongmu.com/recent_processing.html" ><p>Processing Project</p></a>
+			<a href="http://xiaolongmu.com/recent_network.html"><p>JavaScript</p></a>
+			<a href="http://xiaolongmu.com/recent_cup.html"><p>Smart Cup</p></a>
+			<a href="http://xiaolongmu.com/recent_yiger_watch.html"><p>Yiger Stress Detect Watch</p></a>
+		</div>
+
+		<div id="Old">
+			<a href="http://xiaolongmu.com/old_works.html"><p> Old Works </p></a>
+		</div>
+
+		<div id="BSide">
+			<a href="http://xiaolongmu.com/b_side.html"><p> B-Side </p></a>
+		</div>
+	</div>
+
+	<div id="content">
+
+		<iframe src="//player.vimeo.com/video/114674924?title=0&amp;byline=0&amp;portrait=0" width="640" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+		</iframe> 
+		<p>
+			<a href="http://vimeo.com/114674924">Flower Pot</a> from <a href="http://vimeo.com/user16478837">Xiaolong Mu</a> on <a href="https://vimeo.com">Vimeo</a>.
+		</p>
+
+		<p class="p1">
+			<a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8542-e1418068913549.jpg">
+				<img class="aligncenter wp-image-325 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8542-e1418068913549-1024x1024.jpg" alt="IMG_8542" width="474" height="474" />
+			</a>
+		</p>
+		<p class="p1"><a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8544-e1418068958342.jpg"><img class="aligncenter wp-image-326 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8544-e1418068958342-1024x1024.jpg" alt="IMG_8544" width="474" height="474" /></a></p>
+		<p class="p1"><span class="s1">We made a flower pot which can walk and chase the sun light. It use its 4 light sensors to determine the brightest direction in the room, and to servo motors drive it to move around. </span></p>
+		<p class="p1"><span class="s1">We think the plants also can live like mammal or insect, it can run and have its own desire. We also have a preset for plants set in the pot, and the flower pot will give the plants appropriate sun light according to its species. the user who own this flower pot will also get benefit from this, he don’t have to worry about the the plants’s photosynthesis anymore, in the daytime the pot will move close to the window, and at night it will move into the shade to breath. </span></p>
+		<p class="p1"><span class="s1">We are not satisfied with just making a prototype with wood board, we create our project as a complete product. The structure is carefully designed and it's compact. We intend to make this product as a Arduino toy kit. All the parts are laser cut acrylic and screws, it's easy to assemble.</span></p>
+		<p class="p1"><span class="s1">Our project is almost finished. Before the winter show, we only need to adjust the acrylic case size, give the surface a sandblasting. On the show, we think we also need a small piece of ground or table to let the flower pot to move. We can let visitors to change the light around this area, to play with this pot. So we believe the flower pot will be an amazing project on the show. </span></p>
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_7730.jpg"><img class="aligncenter wp-image-289 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_7730-e1418068981741-1024x1024.jpg" alt="IMG_7730" width="474" height="474" /></a>
+		<p class="p1">At the very beginning， we use regular motor to drive the pot. I used a joystick to represented the code order, I tried to let the motors work together to walk forward, turn direction and walk backward.</p>
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_7733.jpg"><img class="aligncenter wp-image-290 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_7733-1024x768.jpg" alt="IMG_7733" width="474" height="355" /></a>
+		<p class="p1">We use H bridge to reverse the "+" and "-" of the circuit, so that we can make the motors rotate reversely.</p>
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_7997.jpg"><img class="aligncenter wp-image-291 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_7997-1024x768.jpg" alt="IMG_7997" width="474" height="355" /></a> <a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8003.jpg"><img class="aligncenter wp-image-292 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8003-1024x768.jpg" alt="IMG_8003" width="474" height="355" /></a><p class="p1">The early version prototype laser cut.</p>
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8006.jpg"><img class="aligncenter wp-image-293 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8006-1024x768.jpg" alt="IMG_8006" width="474" height="355" /></a> <a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8009.jpg"><img class="aligncenter wp-image-294 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8009-1024x768.jpg" alt="IMG_8009" width="474" height="355" /></a> <a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8010.jpg"><img class="aligncenter wp-image-295 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8010-1024x768.jpg" alt="IMG_8010" width="474" height="355" /></a> <a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8015.jpg"><img class="aligncenter wp-image-296 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8015-1024x768.jpg" alt="IMG_8015" width="474" height="355" /></a>
+		<p class="p1">The eraly version of our pot structure.</p>
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8083.jpg"><img class="aligncenter wp-image-297 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8083-e1418069044768-1024x1024.jpg" alt="IMG_8083" width="474" height="474" /></a> <a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8088.jpg"><img class="aligncenter wp-image-298 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8088-e1418069066292-1024x1024.jpg" alt="IMG_8088" width="474" height="474" /></a> <a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8090.jpg"><img class="aligncenter wp-image-299 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8090-e1418069083377-1024x1024.jpg" alt="IMG_8090" width="474" height="474" /></a>
+		<p class="p1">We laser cut the acrylic version and test. Unfortunately, the weight is too high so the regular motor don't have enough torque force to drive its load.</p>
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8210.jpg"><img class="aligncenter wp-image-300 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8210-1024x768.jpg" alt="IMG_8210" width="474" height="355" /></a>
+		<p class="p1">So, we basically redesigned all the structure.</p>
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8213.jpg"><img class="aligncenter wp-image-301 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8213-1024x768.jpg" alt="IMG_8213" width="474" height="355" /></a> <a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8214.jpg"><img class="aligncenter wp-image-302 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8214-1024x768.jpg" alt="IMG_8214" width="474" height="355" /></a> <a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8215.jpg"><img class="aligncenter wp-image-303 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8215-1024x768.jpg" alt="IMG_8215" width="474" height="355" /></a>
+		<p class="p1">Assembled the motor part. We chose the Continuous Rotation Servo instead the regular motors. They work much better.</p>
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8220.jpg"><img class="aligncenter wp-image-304 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8220-e1418069126443-768x1024.jpg" alt="IMG_8220" width="474" height="632" /></a>
+		<p class="p1">add the breadboard</p>
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8221.jpg"><img class="aligncenter wp-image-305 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8221-e1418069142715-768x1024.jpg" alt="IMG_8221" width="474" height="632" /></a> <a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8491.jpg"><img class="aligncenter wp-image-306 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8491-e1418069159756-1024x1024.jpg" alt="IMG_8491" width="474" height="474" /></a>
+		<p class="p1">Test the circuit again. The four sensors surround the paper cup aim at four direction, a distance sensor also face the front side to let the pot go backward when it is blocked by some object.</p>
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8497.jpg"><img class="aligncenter wp-image-307 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8497-e1418069175327-1024x1024.jpg" alt="IMG_8497" width="474" height="474" /></a> <a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8498.jpg"><img class="aligncenter wp-image-308 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8498-e1418069201949-1024x1024.jpg" alt="IMG_8498" width="474" height="474" /></a>
+		<p class="p1">The final acrylic laser cut and the motors.</p>
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8522.jpg"><img class="aligncenter wp-image-309 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8522-1024x768.jpg" alt="IMG_8522" width="474" height="355" /></a>
+		<p class="p1">Almost done! The outside case we cut is a little bit short, so we added temporary wooden rim to fix the top.</p>
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8544-e1418068958342.jpg"><img class="aligncenter wp-image-326 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/12/IMG_8544-e1418068958342-1024x1024.jpg" alt="IMG_8544" width="474" height="474" /></a>
+		<p class="p1">The final final project.</p>
+
+		<p class="p1">We replace the outside tube. Each part are firmly fixed together.</p>
+
+	</div>
+
+	<div id="title">
+		<h1 style="color: #ff0000;"> Chasing Flower Pot </h1>
+	</div>
+
+	<div id="line"></div>
+
+	<script type="text/javascript">
+		document.getElementById("menu").addEventListener("mouseover", changecolor);
+
+		function changecolor() {
+			// alert("ha");
+			document.getElementById("test").style.color = "#00c6e3";
+		}
+	</script>
+</body>
+</html>

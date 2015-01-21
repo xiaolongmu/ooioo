@@ -1,0 +1,164 @@
+<html>
+<head>
+	<meta charset="UTF-8"/>
+</head>
+<style type="text/css">
+
+	body 
+	{ 
+		scrollbar-base-color: orange; 
+		scrollbar-arrow-color: green;
+		scrollbar-DarkShadow-Color: blue; 
+	}
+
+	a:link, a:visited { 
+		text-decoration:none;
+		color: #000000;
+	}
+
+	a:hover { 
+		color:#00C6E3; 
+		text-decoration:none; 
+	} 
+
+	#menu,#title,#back{
+		font-family: "Futura", Arial, serif;
+		font-style: Medium;
+		color:#0000;
+		line-height: 14pt;
+	}
+
+	#back{
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-left: 20px;
+		width:180px;
+		position:absolute;
+		left:10px;
+		top:10px;
+	}
+
+	#menu{
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-left: 20px;
+		width:180px;
+		position:absolute;
+		left:10px;
+		top:70px;
+	}
+
+	#line{
+		width:1px;
+		height: 280px;
+		background-color: #cccccc;
+		position: absolute;
+		left:210px;
+		top:20px;
+
+	}
+
+	#title{
+		/*background-color: #ffffff;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-top: 4px;
+		padding-left: 10px;
+		width:690px;
+		position:absolute;
+		left:220px;
+		top:10px;
+
+	}
+
+	#content{
+		padding: 10px;
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		width:680px;
+		position:absolute;
+		left:220px;
+		top:70px;
+		overflow-y:scroll;
+		overflow-x:hidden;
+
+		font-family: "Verdana", Geneva, serif;
+		font-size: 14px;
+	}
+
+	#old{
+		margin-left: 20px;
+		margin-bottom: 30px;
+	}
+</style>
+<body onLoad="startTime()">
+	<script type="text/javascript">
+
+		
+
+		//.....................................................................
+
+		function startTime(){
+			var h = window.innerHeight;
+			document.getElementById("content").style.height = h-32-60;
+		}
+
+		window.addEventListener("resize", function(){
+			var h = window.innerHeight;
+			document.getElementById("content").style.height = h-32-60;
+       // console.log(h-32-60);
+   });
+	</script>
+	<div id="back">
+		<a href="http://xiaolongmu.com"><p> Back To Home </p></a>
+	</div>
+
+	<div id="menu">
+		<a href="http://xiaolongmu.com/recent_works.html"><p> Recent Works </p></a>
+
+		<a href="http://xiaolongmu.com/old_works.html"><p>Old Works</p></a>
+
+		<div id="Old">
+			<a href="http://xiaolongmu.com/old_glass_art.html" style="color: #ff0000;"><p> Glass Art </p></a>
+			<a href="http://xiaolongmu.com/old_print_sound.html" ><p>Print The Sound</p></a>
+			<a href="http://xiaolongmu.com/old_max.html"><p>Max/Msp Synthesizer</p></a>
+			<a href="http://xiaolongmu.com/old_symbol.html"><p>Symbol Language</p></a>
+		</div>
+
+		<div id="BSide">
+			<a href="http://xiaolongmu.com/b_side.html"><p>B-Side</p></a>
+		</div>
+	</div>
+
+	<div id="content">
+
+		<!-- ..................................Content......................................... -->
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/08/4.1.png"><img class="aligncenter wp-image-52 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/08/4.1-1024x723.png" alt="4.1" width="640" /></a>
+		<p>This series of works express the relationship between noise and human life. Many things in the world usually have more than one fact. Opposite conclusions sometimes root in same thing. All these phenomena around us creat a kind of noise. Words are written on each page of these glass books. Words on each homologous line in different pages are talking about the same topic, but with opposite conclusions. Looking through these transparent pages, you can see all these opinions are overlapped and mixed together, forming pieces of messes and chaos. History is a complex mixture of truths and lies. Present is constituted of opposite hypothesis. And our autognosis is sometimes contradictory. These three aspects are expressed by these three books. These three aspects are the noise around us.</p>
+
+
+		<!-- ..................................Content End......................................... -->
+
+	</div>
+
+	<div id="title">
+		<h1 style="color: #ff0000;"> Chasing Flower Pot </h1>
+	</div>
+
+	<div id="line"></div>
+
+	<script type="text/javascript">
+		document.getElementById("menu").addEventListener("mouseover", changecolor);
+
+		function changecolor() {
+			// alert("ha");
+			document.getElementById("test").style.color = "#00c6e3";
+		}
+	</script>
+</body>
+</html>

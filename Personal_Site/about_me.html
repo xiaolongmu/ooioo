@@ -1,0 +1,130 @@
+<html>
+<head>
+	<meta charset="UTF-8"/>
+</head>
+<style type="text/css">
+
+	a:link, a:visited { 
+		text-decoration:none;
+		color: #000000;
+		cursor: auto;
+	}
+
+	a:hover { 
+		color:#00C6E3; 
+		text-decoration:none; 
+	} 
+
+	#title,#back{
+		font-family: "Futura", Arial, serif;
+		font-style: Medium;
+		color:#0000;
+		line-height: 14pt;
+	}
+
+	#back{
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-left: 20px;
+		width:180px;
+		position:absolute;
+		left:10px;
+		top:10px;
+	}
+
+
+
+	#line{
+		width:1px;
+		height: 280px;
+		background-color: #cccccc;
+		position: absolute;
+		left:210px;
+		top:20px;
+
+	}
+
+	#title{
+		/*background-color: #ffffff;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-top: 4px;
+		padding-left: 10px;
+		width:690px;
+		position:absolute;
+		left:220px;
+		top:10px;
+
+	}
+
+	#content{
+		padding: 10px;
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		width:680px;
+		position:absolute;
+		left:220px;
+		top:70px;
+		overflow-y:scroll;
+		overflow-x:hidden;
+
+		font-family: "Verdana", Geneva, serif;
+		font-size: 14px;
+	}
+
+	#recent{
+		margin-left: 20px;
+		margin-bottom: 30px;
+	}
+</style>
+<body onLoad="startTime()">
+	<script type="text/javascript">
+
+		function startTime(){
+			var h = window.innerHeight;
+			document.getElementById("content").style.height = h-32-60;
+		}
+
+		window.addEventListener("resize", function(){
+			var h = window.innerHeight;
+			document.getElementById("content").style.height = h-32-60;
+       // console.log(h-32-60);
+   });
+	</script>
+	<div id="back">
+		<a href="http://xiaolongmu.com"><p> Back To Home </p></a>
+	</div>
+
+	<div id="content">
+		<p>hjsbdjhbcjshkdfbjhvsbdjkhb</p>
+		<p>sdvsdfd</p>
+		<p>sdfvsdfvsdfvsdfvsdfvsdf</p>
+		<p>sdfvsdfvsdfvsdfvsdfvsdfvsdfvsdvdsfvsdfvsdfvsdfvsdfsdfvs</p>
+
+		<p>sdfvsdfvsdfvsdfvsdfvsdfvsdfvsdvsdfvsssdf</p>
+		<p>Adam gave Sally 3 flowers and 1 stuffed animal. Kristen gave Sally 5 flowers and 2 stuffed animals. What does Sally have?</p>
+		<p>Anthony Gulledge, 30, and the child’s mother have both been charged with aggravated child abuse after authorities say Gulledge broke the thighbone of a 3-year-old boy who ate the last slice of cheesecake.</p>
+
+		<p>Memphis, Tenn., mother and her boyfriend are both in jail after the boyfriend reportedly beat her 3-year-old son so badly that he broke his thighbone, dislocated a vertebra and bruised his lung, Eyewitness 3 News reports.</p>
+
+		<p>According to the news station, Anthony Gulledge, 30, arrived home Saturday to find that the little boy had eaten the last slice of cheesecake. Gulledge reportedly dragged the boy by his ankle and began whipping him. </p>
+
+		<p>The boy's mother, Katrina Johnson, didn't take the boy to the hospital until the next day, authorities say, though by state law, Johnson is obligated to report the abuse the day it happens, according to the news station. Once hospital authorities examined the boy, they discovered several injuries and Gulledge was arrested. Police then came and arrested Johnson on Monday.</p>
+
+		<p>"Priority for her should have been to protect this child and to stop the abuse from happening," Barbara King, executive director for the Exchange Club Family Center, told the news station.</p>
+
+		<p>"These children are the least able to protect themselves, and these are children that are attacked. If you did that to an adult, it'd be assault and you'd be put in jail," King said.</p>
+
+		<p>According to the news station, both Johnson and Gulledge have been charged with aggravated child abuse.</p>
+	</div>
+
+	<div id="title">
+		<h1 style="color: #ff0000;"> About Me </h1>
+	</div>
+
+	<div id="line"></div>
+</body>
+</html>

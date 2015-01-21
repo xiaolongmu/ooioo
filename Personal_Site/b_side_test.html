@@ -1,0 +1,299 @@
+<html>
+<head>
+	<meta charset="UTF-8"/>
+</head>
+<style type="text/css">
+
+	.illu{
+		display:inline;
+	}
+
+	body 
+	{ 
+		scrollbar-base-color: orange; 
+		scrollbar-arrow-color: green;
+		scrollbar-DarkShadow-Color: blue; 
+	}
+
+	a:link, a:visited { 
+		text-decoration:none;
+		color: #000000;
+	}
+
+	a:hover { 
+		color:#00C6E3; 
+		text-decoration:none; 
+	} 
+
+	#menu,#title,#back{
+		font-family: "Futura", Arial, serif;
+		font-style: Medium;
+		color:#0000;
+		line-height: 14pt;
+	}
+
+	#back{
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-left: 20px;
+		width:180px;
+		position:absolute;
+		left:10px;
+		top:10px;
+	}
+
+	#menu{
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-left: 20px;
+		width:180px;
+		position:absolute;
+		left:10px;
+		top:70px;
+	}
+
+	#line{
+		width:1px;
+		height: 280px;
+		background-color: #cccccc;
+		position: absolute;
+		left:210px;
+		top:20px;
+
+	}
+
+	#title{
+		/*background-color: #ffffff;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-top: 4px;
+		padding-left: 10px;
+		width:690px;
+		position:absolute;
+		left:220px;
+		top:10px;
+
+	}
+
+	#content{
+		padding: 10px;
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		width:680px;
+		position:absolute;
+		left:220px;
+		top:70px;
+		overflow-y:scroll;
+		overflow-x:hidden;
+
+		font-family: "Verdana", Geneva, serif;
+		font-size: 14px;
+	}
+
+	#old{
+		margin-left: 20px;
+		margin-bottom: 30px;
+	}
+</style>
+<body onLoad="startTime()">
+
+
+	<script type="text/javascript">
+
+		//.....................................................................
+
+		function startTime(){
+			var h = window.innerHeight;
+			document.getElementById("content").style.height = h-32-60;
+		}
+
+		window.addEventListener("resize", function(){
+			var h = window.innerHeight;
+			document.getElementById("content").style.height = h-32-60;
+       // console.log(h-32-60);
+   });
+	</script>
+	<div id="back">
+		<a href="http://xiaolongmu.com"><p> Back To Home </p></a>
+	</div>
+
+	<div id="menu">
+		<a href="http://xiaolongmu.com/recent_works.html"><p> Recent Works </p></a>
+
+		<a href="http://xiaolongmu.com/old_works.html"><p>Old Works</p></a>
+
+		<div id="Old">
+			<a href="http://xiaolongmu.com/old_glass_art.html"><p> Glass Art </p></a>
+			<a href="http://xiaolongmu.com/old_print_sound.html" style="color: #ff0000;"><p>Print The Sound</p></a>
+			<a href="http://xiaolongmu.com/old_max.html"><p>Max/Msp Synthesizer</p></a>
+			<a href="http://xiaolongmu.com/old_symbol.html"><p>Symbol Language</p></a>
+		</div>
+
+		<div id="BSide">
+			<a href="http://xiaolongmu.com/b_side.html"><p>B-Side</p></a>
+		</div>
+	</div>
+
+	<div id="content">
+
+		<!-- ..................................Content......................................... -->
+		<div id="illu1" class="illu">
+			<img src="http://xiaolongmu.com/images/illustration/whale.png" width="320px;">
+		</div>
+		<div id="illu2" class="illu">
+			<img src="http://xiaolongmu.com/images/illustration/chedan.png" width="320px;">
+		</div>
+		<div id="illu3" class="illu">
+			<img src="http://xiaolongmu.com/images/illustration/curry.png" width="320px;">
+		</div>
+		<div id="illu4" class="illu">
+			<img src="http://xiaolongmu.com/images/illustration/snow.png" width="320px;">
+		</div>
+		<div id="illu5" class="illu">
+			<img src="http://xiaolongmu.com/images/illustration/yishi.png" width="320px;">
+		</div>
+		<div id="illu6" class="illu">
+			<img src="http://xiaolongmu.com/images/illustration/yun.png" width="320px;">
+		</div>
+		<div id="illu7" class="illu">
+			<img src="http://xiaolongmu.com/images/illustration/waveman.png" width="320px;">
+		</div>
+		<div id="illu8" class="illu">
+			<img src="http://xiaolongmu.com/images/illustration/horseman.png" width="320px;">
+		</div>
+		<div id="illu9" class="illu">
+			<img src="http://xiaolongmu.com/images/illustration/eyeballhead.png" width="320px;">
+		</div>
+		<div id="illu10" class="illu">
+			<img src="http://xiaolongmu.com/images/illustration/elephantBuddha.png" width="320px;">
+		</div>
+		<div id="illu11" class="illu">
+			<img src="http://xiaolongmu.com/images/illustration/christmasTree.png" width="320px;">
+		</div>
+
+		<br>
+		<br>
+
+
+		<!-- ..................................Content End......................................... -->
+
+	</div>
+
+	<div id="title">
+		<h1 style="color: #ff0000;"> Chasing Flower Pot </h1>
+	</div>
+
+	<div id="line"></div>
+
+	<div id="ooioo" class="dt">
+	</div>
+
+	<div id="img1" style="margin-left:auto; margin-right:auto; width:1024px; text-align: center;"> </div>
+
+	
+
+	<script type="text/javascript">
+
+		document.getElementById("illu1").addEventListener("click", background);
+		document.getElementById("illu1").addEventListener("click", display1);
+		document.getElementById("illu2").addEventListener("click", background);
+		document.getElementById("illu2").addEventListener("click", display2);
+		document.getElementById("illu3").addEventListener("click", background);
+		document.getElementById("illu3").addEventListener("click", display3);
+		document.getElementById("illu4").addEventListener("click", background);
+		document.getElementById("illu4").addEventListener("click", display4);
+		document.getElementById("illu5").addEventListener("click", background);
+		document.getElementById("illu5").addEventListener("click", display5);
+		document.getElementById("illu6").addEventListener("click", background);
+		document.getElementById("illu6").addEventListener("click", display6);
+		document.getElementById("illu7").addEventListener("click", background);
+		document.getElementById("illu7").addEventListener("click", display7);
+		document.getElementById("illu8").addEventListener("click", background);
+		document.getElementById("illu8").addEventListener("click", display8);
+		document.getElementById("illu9").addEventListener("click", background);
+		document.getElementById("illu9").addEventListener("click", display9);
+		document.getElementById("illu10").addEventListener("click", background);
+		document.getElementById("illu10").addEventListener("click", display10);
+		document.getElementById("illu11").addEventListener("click", background);
+		document.getElementById("illu11").addEventListener("click", display11);
+
+		function background() {
+			document.getElementById("ooioo").style.backgroundColor = "#000000";
+			document.getElementById("ooioo").style.opacity = "0.6";
+			document.getElementById("ooioo").style.width = innerWidth;
+			document.getElementById("ooioo").style.height = innerHeight;
+			document.getElementById("ooioo").style.position = "absolute";
+			document.getElementById("ooioo").style.left = "0px";
+			document.getElementById("ooioo").style.top = "0px";
+		}
+
+		function display1() {
+			document.getElementById("img1").innerHTML = "<img src='http://xiaolongmu.com/images/illustration/whale.png' height='90%'>";
+			document.getElementById("img1").style.position ="relative";
+		}
+
+		function display2() {
+			document.getElementById("img1").innerHTML = "<img src='http://xiaolongmu.com/images/illustration/chedan.png' height='90%'>";
+			document.getElementById("img1").style.position ="relative";
+		}
+		function display3() {
+			document.getElementById("img1").innerHTML = "<img src='http://xiaolongmu.com/images/illustration/curry.png' height='90%'>";
+			document.getElementById("img1").style.position ="relative";
+		}
+		function display4() {
+			document.getElementById("img1").innerHTML = "<img src='http://xiaolongmu.com/images/illustration/snow.png' height='90%'>";
+			document.getElementById("img1").style.position ="relative";
+		}
+		function display5() {
+			document.getElementById("img1").innerHTML = "<img src='http://xiaolongmu.com/images/illustration/yishi.png' height='90%'>";
+			document.getElementById("img1").style.position ="relative";
+		}
+		function display6() {
+			document.getElementById("img1").innerHTML = "<img src='http://xiaolongmu.com/images/illustration/yun.png' height='90%'>";
+			document.getElementById("img1").style.position ="relative";
+		}
+		function display7() {
+			document.getElementById("img1").innerHTML = "<img src='http://xiaolongmu.com/images/illustration/waveman.png' height='90%'>";
+			document.getElementById("img1").style.position ="relative";
+		}
+		function display8() {
+			document.getElementById("img1").innerHTML = "<img src='http://xiaolongmu.com/images/illustration/horseman.png' height='90%'>";
+			document.getElementById("img1").style.position ="relative";
+		}
+		function display9() {
+			document.getElementById("img1").innerHTML = "<img src='http://xiaolongmu.com/images/illustration/eyeballhead.png' height='90%'>";
+			document.getElementById("img1").style.position ="relative";
+		}
+		function display10() {
+			document.getElementById("img1").innerHTML = "<img src='http://xiaolongmu.com/images/illustration/elephantBuddha.png' height='90%'>";
+			document.getElementById("img1").style.position ="relative";
+		}
+		function display11() {
+			document.getElementById("img1").innerHTML = "<img src='http://xiaolongmu.com/images/illustration/christmasTree.png' height='90%'>";
+			document.getElementById("img1").style.position ="relative";
+		}
+
+
+
+
+
+
+		document.getElementById("img1").addEventListener("click", remove);
+		
+		function remove(){
+			document.getElementById("img1").innerHTML = "";
+			document.getElementById("ooioo").innerHTML = "";
+			document.getElementById("ooioo").style.backgroundColor = "";
+			document.getElementById("ooioo").style.opacity = "";
+			document.getElementById("ooioo").style.width = "";
+			document.getElementById("ooioo").style.height = "";
+		}
+
+
+	</script>
+</body>
+</html>

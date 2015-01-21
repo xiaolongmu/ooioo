@@ -1,0 +1,184 @@
+<html>
+<head>
+	<meta charset="UTF-8"/>
+</head>
+<style type="text/css">
+
+	body 
+	{ 
+		scrollbar-base-color: orange; 
+		scrollbar-arrow-color: green;
+		scrollbar-DarkShadow-Color: blue; 
+	}
+
+	a:link, a:visited { 
+		text-decoration:none;
+		color: #000000;
+	}
+
+	a:hover { 
+		color:#00C6E3; 
+		text-decoration:none; 
+	} 
+
+	#menu,#title,#back{
+		font-family: "Futura", Arial, serif;
+		font-style: Medium;
+		color:#0000;
+		line-height: 14pt;
+	}
+
+	#back{
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-left: 20px;
+		width:180px;
+		position:absolute;
+		left:10px;
+		top:10px;
+	}
+
+	#menu{
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-left: 20px;
+		width:180px;
+		position:absolute;
+		left:10px;
+		top:70px;
+	}
+
+	#line{
+		width:1px;
+		height: 280px;
+		background-color: #cccccc;
+		position: absolute;
+		left:210px;
+		top:20px;
+
+	}
+
+	#title{
+		/*background-color: #ffffff;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-top: 4px;
+		padding-left: 10px;
+		width:690px;
+		position:absolute;
+		left:220px;
+		top:10px;
+
+	}
+
+	#content{
+		padding: 10px;
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		width:680px;
+		position:absolute;
+		left:220px;
+		top:70px;
+		overflow-y:scroll;
+		overflow-x:hidden;
+
+		font-family: "Verdana", Geneva, serif;
+		font-size: 14px;
+	}
+
+	#old{
+		margin-left: 20px;
+		margin-bottom: 30px;
+	}
+</style>
+<body onLoad="startTime()">
+	<script type="text/javascript">
+
+		
+
+		//.....................................................................
+
+		function startTime(){
+			var h = window.innerHeight;
+			document.getElementById("content").style.height = h-32-60;
+		}
+
+		window.addEventListener("resize", function(){
+			var h = window.innerHeight;
+			document.getElementById("content").style.height = h-32-60;
+       // console.log(h-32-60);
+   });
+	</script>
+	<div id="back">
+		<a href="http://xiaolongmu.com"><p> Back To Home </p></a>
+	</div>
+
+	<div id="menu">
+		<a href="http://xiaolongmu.com/recent_works.html"><p> Recent Works </p></a>
+
+		<a href="http://xiaolongmu.com/old_works.html"><p>Old Works</p></a>
+
+		<div id="Old">
+			<a href="http://xiaolongmu.com/old_glass_art.html"><p> Glass Art </p></a>
+			<a href="http://xiaolongmu.com/old_print_sound.html" ><p>Print The Sound</p></a>
+			<a href="http://xiaolongmu.com/old_max.html" style="color: #ff0000;"><p>Max/Msp Synthesizer</p></a>
+			<a href="http://xiaolongmu.com/old_symbol.html"><p>Symbol Language</p></a>
+		</div>
+
+		<div id="BSide">
+			<a href="http://xiaolongmu.com/b_side.html"><p>B-Side</p></a>
+		</div>
+	</div>
+
+	<div id="content">
+
+		<!-- ..................................Content......................................... -->
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/08/1.1.jpg"><img class="aligncenter wp-image-13 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/08/1.1-1024x723.jpg" alt="1.1" width="640" /></a>
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/08/1.2.png"><img class="aligncenter wp-image-18 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/08/1.2-1024x723.png" alt="1.2" width="640" /></a>
+		<p>Krauty is a synthesizer that I made with Max/Msp.</p>
+		<p>It has the sound of the kraut-rock music in 1970s. which is why I named it “Krauty”. This synthesizer contains two oscillators which can be switched between sine wave and square wave respectively. A panning knob is set on the right side in order to adjust the balance of this two oscillators. Under the oscillator area，there lies the envelop controller. These four knobs represent attack, decay, sustain and release. Adjusting these four parameters provide you various shapes of the sound. There are two buttons in the OCT area on the left. You can change the octave of the keyboard by pressing the button. The unique parts are these two touchable panels. One is the LFO and the other is filter. I combine the Kaosso pad with the original synthesizer. Any single point on the kaosso pad has two different parameter on each the X-axis and Y-axis, so you can change these two parameter with only one movement.</p>
+
+
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/08/2.1.png"><img class="aligncenter wp-image-21 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/08/2.1-1024x723.png" alt="2.1" width="640"/></a>
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/08/2.2.png"><img class="aligncenter wp-image-22 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/08/2.2-1024x723.png" alt="2.2" width="640"/></a>
+		<p>Maxtron is a micro synthesizer that only has little basic function.</p>
+		<p> This synthesizer doesn’t have a keyboard. Instead, you can change the pitch by slipping on the strip. The pitch knob works as well. This synthesizer has a LFO which has two modes. The pitch mode and cutoff mode.In the pitch mode, the pitch of the sound will has a low frequency oscillation. In the cutoff mode, the low frequency oscillation will have an effect on the cutoff value.</p>
+
+
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/08/3.1.png"><img class="aligncenter wp-image-28 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/08/3.1-1024x723.png" alt="3.1" width="640"/></a>
+
+		<a href="http://xiaolongmou.com/wp-content/uploads/2014/08/3.2.png"><img class="aligncenter wp-image-29 size-large" src="http://xiaolongmou.com/wp-content/uploads/2014/08/3.2-1024x723.png" alt="3.2" width="640"/></a>
+		<p>ArpKey</p>
+		<p>This synthesizer is a sequencer synthesizer. It has 8 notes, These 8 notes compose one bar and this bar repeats endlessly. There are 16 sliders on the left. each line stands for one note. The upper row of slider controls the ample of the notes. The lower row control the pitch. This synthesizer equips an enveloper as well in the right lower corner. You can prestore 4 different bars in 4 preset buttons. So, you can switch the music into another bar seamlessly.</p>
+		<br/>
+		<br/>
+
+
+		<!-- ..................................Content End......................................... -->
+
+	</div>
+
+	<div id="title">
+		<h1 style="color: #ff0000;"> Chasing Flower Pot </h1>
+	</div>
+
+	<div id="line"></div>
+
+	<script type="text/javascript">
+		document.getElementById("menu").addEventListener("mouseover", changecolor);
+
+		function changecolor() {
+			// alert("ha");
+			document.getElementById("test").style.color = "#00c6e3";
+		}
+	</script>
+</body>
+</html>

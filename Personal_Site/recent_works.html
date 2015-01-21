@@ -1,0 +1,153 @@
+<html>
+<head>
+	<meta charset="UTF-8"/>
+</head>
+<style type="text/css">
+
+	a:link, a:visited { 
+		text-decoration:none;
+		color: #000000;
+		cursor: auto;
+	}
+
+	a:hover { 
+		color:#00C6E3; 
+		text-decoration:none; 
+	} 
+
+	.project,#back,#menu{
+		font-family: "Futura", Arial, serif;
+		font-style: Medium;
+		color:#0000;
+		line-height: 14pt;
+	}
+
+	#back{
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-left: 20px;
+		width:180px;
+		position:absolute;
+		left:10px;
+		top:10px;
+	}
+
+	#menu{
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		padding-left: 20px;
+		width:180px;
+		position:absolute;
+		left:10px;
+		top:70px;
+	}
+
+	#line{
+		width:1px;
+		height: 280px;
+		background-color: #cccccc;
+		position: absolute;
+		left:210px;
+		top:20px;
+
+	}
+
+	.project{
+		/*background-color: #ffffff;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ededed;*/
+		width:690px;
+		height:100px;
+		position:absolute;
+		left:220px;
+	}
+
+	.project{
+		font-size: 14px;
+	}
+
+
+	#project1{top:20px;}
+	#project2{top:132px;}
+	#project3{top:242px;}
+	#project4{top:352px;}
+	#project5{top:462px;}
+
+	#recent{
+		margin-left: 20px;
+		margin-bottom: 30px;
+	}
+
+</style>
+<body onLoad="startTime()">
+	<script type="text/javascript">
+
+		function startTime(){
+			var h = window.innerHeight;
+			document.getElementById("content").style.height = h-32-60;
+		}
+
+		window.addEventListener("resize", function(){
+			var h = window.innerHeight;
+			document.getElementById("content").style.height = h-32-60;
+       // console.log(h-32-60);
+   });
+	</script>
+	<div id="back">
+		<a href="http://xiaolongmu.com"><p> Back To Home </p></a>
+	</div>
+
+	<div id="menu">
+		<a href="http://xiaolongmu.com/recent_works.html"><p style="color:#ff0000;"> Recent Works </p></a>
+
+		<div id="Old">
+			<a href="http://xiaolongmu.com/old_works.html"><p> Old Works </p></a>
+		</div>
+
+		<div id="BSide">
+			<a href="http://xiaolongmu.com/b_side.html"><p> B-Side </p></a>
+		</div>
+	</div>
+
+	<div id="project1" class="project">
+		<a href="http://xiaolongmu.com/recent_chasing.html">
+		<img src="http://xiaolongmu.com/images/Project_menu_03.png" style="height:100px;">
+		<p style="margin-left:4px; display:inline">Chasing Flower Pot</p>
+		</a>
+	</div>
+
+	<div id="project2" class="project">
+		<a href="http://xiaolongmu.com/recent_processing.html">
+		<img src="http://xiaolongmu.com/images/Project_menu_06.png" style="height:100px;">
+		<p style="margin-left:4px; display:inline">Processing</p>
+		</a>
+	</div>
+
+	<div id="project3" class="project">
+		<a href="http://xiaolongmu.com/recent_network.html">
+		<img src="http://xiaolongmu.com/images/Project_menu_08.png" style="height:100px;">
+		<p style="margin-left:4px; display:inline">JavaScript</p>
+		</a>
+	</div>
+
+	<div id="project4" class="project">
+		<a href="http://xiaolongmu.com/recent_cup.html">
+		<img src="http://xiaolongmu.com/images/Project_menu_10.png" style="height:100px;">
+		<p style="margin-left:4px; display:inline">Smart Cup</p>
+		</a>
+	</div>
+
+	<div id="project5" class="project">
+		<a href="http://xiaolongmu.com/recent_yiger_watch.html">
+		<img src="http://xiaolongmu.com/images/Project_menu_12.png" style="height:100px;">
+		<p style="margin-left:4px; display:inline">Yiger Stress Detect Watch </p>
+		</a>
+	</div>
+
+
+	<div id="line"></div>
+</body>
+</html>
